@@ -1,4 +1,4 @@
 import TodoApp from './src';
 import { AppRegistry } from 'react-native';
 
-AppRegistry.registerComponent('kang_todo', () => TodoApp);
+AppRegistry.registerComponent('react_todo_list', () => TodoApp);

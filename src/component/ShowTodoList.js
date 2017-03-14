@@ -9,7 +9,13 @@ class ShowTodoList extends Component {
   render() {
     const { todos } = this.props;
     return (
-      <Text>ShowTodoList</Text>
+      <View>
+        todos.map(todo => {
+          <Text>
+            1111
+          </Text>
+        });
+      </View>
     );
   }
 }
