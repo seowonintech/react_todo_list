@@ -6,14 +6,14 @@ import { connect } from 'react-redux';
 // Custom
 import Todo from '../components/Todo';
 
-const TodoList = ({ todos }) => (
-   <Text>{ todos }123</Text>
-);
+// const TodoList = ({ todos }) => (
+//    <Text>{ todos }123</Text>
+// );
 
 const mapStateToProps = (state) => ({
     todos: state.todos
 });
 
-connect(mapStateToProps)(TodoList);
+const TodoList = connect(mapStateToProps)(Todo);
 
 export default TodoList;

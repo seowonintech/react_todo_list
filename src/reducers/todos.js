@@ -31,7 +31,7 @@ const todo = (state = {}, action) => {
     }
 };
 
-const todos = (state = [], action) => {
+const todos = (state = sampleTodos, action) => {
     switch ( action.type ) {
         case ActionTypes.ADD_TODO:
             return [
