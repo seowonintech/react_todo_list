@@ -1,22 +1,6 @@
-import { combineReducers } from 'react-redux';
+import { combineReducers } from 'redux';
 import * as ActionTypes from '../actions/ActionTypes';
-
-const todos = (state = {}, action) => {
-    switch ( action.type ) {
-        case ActionTypes.ADD_TODO:
-            return 
-                ...state,
-                {
-                    id: action.id,
-                    text: action.text
-                }
-            };
-        case ActionTypes.REMOVE_TODO:
-            return filter(t => {});
-        default:
-            return state;
-    }
-}
+import todos from './todos';
 
 const todoApp = combineReducers({
     todos

@@ -11,7 +11,7 @@ const TodoList = ({ todos }) => (
 );
 
 const mapStateToProps = (state) => ({
-    todos: "asdf"
+    todos: state.todos
 });
 
 connect(mapStateToProps)(TodoList);

@@ -17,4 +17,5 @@ export default class todos extends Component {
   }
 }
 
-AppRegistry.registerComponent('todos', () => todos);
+AppRegistry.registerComponent('react_todo_list', () => todos);
+// AppRegistry.registerComponent('todos', () => todos);

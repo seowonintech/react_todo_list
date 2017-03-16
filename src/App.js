@@ -31,6 +31,9 @@ const store = createStore(reducers);
 const App = () => (
     <Provider store={store}>
         <View style={styles.container}>
+            {/*<Text>
+                "asdf"
+            </Text>*/}
             <TodoList />
         </View>
     </Provider>
