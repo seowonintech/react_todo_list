@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 const Todo = ({ todos }) => (
-   <Text>{JSON.stringify(todos[0])}</Text>
+    <View>
+        {todos.map(todo => (
+            <Text>
+                {todo.text}
+            </Text>
+        ))}
+    </View>
 );
 
 export default Todo;
